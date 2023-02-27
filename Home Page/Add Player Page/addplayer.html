@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Player</title>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    #h1{
+            text-align: center;
+            color:  #18184a;
+    font-family: "Caveat Brush", cursive;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 50px;
+        }
+        p{
+    font-size: 30px;
+    color: #0d6efd;
+    font-family: "Caveat Brush", cursive;
+    font-style: italic;
+}
+body{
+background: #e5e5e5;
+font-family: "Caveat Brush", cursive;
+
+}
+#add-team{
+    margin-left: 100px;
+}
+input{
+    padding: 10px;
+    background-color: white;
+    margin-top: -10px;
+    font-family: "Caveat Brush", cursive;
+}
+select{
+    padding: 10px;
+    background-color: white;
+    margin-top: -10px;
+    
+}
+.edl {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+option{
+    font-family: "Caveat Brush", cursive;
+}
+#btn{
+    background-color: #0d6efd;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.top{
+background-color: #18184a;
+padding: 20px;
+width: auto;
+height: 50px;
+
+}
+  </style>
+  </head>
+  <body>
+    <div class="top">
+    </div>
+    <div id="add-team">
+       <h1 id="h1">Add a Player</h1>
+        <form id="addteamform">
+            <p>Player Name</p>
+            <input id="inp1" type="text" name="playerName" placeholder="Enter player name here.." required>
+            <p>Price in Crore</p>
+            <input id="inp2" type="number" name="price" maxlength="2" placeholder="enter price for player.." required>
+            <p>Select Player playing</p>
+            <select id="inp3" type="text" name="isPlaying" placeholder="enter playing status here.." required> 
+                <option value="true">true</option>    
+                <option value="false">false</option>    
+            </select>
+            <p>Select Player Role</p>
+            <select id="inp4" type="text" name="role" required>
+                <option value="ALL-Rounder">ALL-Rounder</option>
+                <option value="Batsman">Batsman</option>
+                <option value="Bowler">Bowler</option>
+                </select>
+            <p>Player Image URL</p>
+            <input id="inp5" type="text" name="playerimg" placeholder="Enter player image url.." required>
+            <p>Enter Player Team</p>
+            <select id="inp6" type="text" name="teamSelect" required>
+
+
+            </select>
+           <br>
+            <button id="btn" type="submit">Add Player</button>
+        </form>
+
+    </div>
+    <img class="edl" alt="logo" src = "edLogo.png">
+    <script src="addplayer.js">
+    </script>
+  </body>
+</html>
